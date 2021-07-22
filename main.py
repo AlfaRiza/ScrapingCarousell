@@ -23,9 +23,8 @@ for obj in datas:
                                                            'M_bc D_bY M_bf D_bK'})
     for desc in descs:
         print('Deskripsi: ', desc.text)
-        # print('Keterangan: ', obj.find('p', attrs={'class': 'D_bN M_aT D_aP M_aC D_bO M_aU D_bR M_aX D_bT M_aZ D_bW '
-        #                                                     'M_bc D_bY M_bf D_bK'}).text)
     print('likes: ', obj.find('span', attrs={'class': 'D_bN M_aT D_aP M_aC D_bO M_aU D_bR M_aX D_bU M_ba D_bW '
                                                           'M_bc D_bY M_bf D_bK'}).text)
+    print('Url: ', obj.find('a', attrs={'class': 'D_bn M_bl'})['href'])
     print('\n')
 
